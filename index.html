@@ -62,7 +62,9 @@
           Эффективные решения <br />
           для вашего бизнеса
         </h1>
-        <a href="" class="order button">Заказать услугу</a>
+        <button href="" class="order button" data-modal-open>
+          Заказать услугу
+        </button>
       </section>
       <!-- Особенности (переделать картинки в inlane-SVG; добавить позиционирование текста) -->
       <section class="container feature-container">
@@ -469,7 +471,7 @@
 
         <div class="subscribe">
           <b>Подпишитесь на рассылку</b>
-          <button class="subscribe-button">Подписаться</button>
+          <button class="subscribe-button" data-modal-open>Подписаться</button>
         </div>
       </div>
 
@@ -479,6 +481,18 @@
         </div>
       </div> -->
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="button" data-modal-close>Закрыть</button>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolor
+          pariatur dolorum, quaerat expedita esse labore reprehenderit provident
+          odio reiciendis, atque quam ipsam, enim saepe libero fuga autem.
+          Dolorum, iusto.
+        </p>
+        <button class="button">Отправить</button>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
