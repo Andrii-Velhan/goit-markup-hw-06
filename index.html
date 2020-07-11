@@ -471,7 +471,7 @@
 
         <div class="subscribe">
           <b>Подпишитесь на рассылку</b>
-          <button class="subscribe-button" data-modal-open>Подписаться</button>
+          <button class="subscribe-button">Подписаться</button>
         </div>
       </div>
 
@@ -483,17 +483,85 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="button" data-modal-close>Закрыть</button>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolor
-          pariatur dolorum, quaerat expedita esse labore reprehenderit provident
-          odio reiciendis, atque quam ipsam, enim saepe libero fuga autem.
-          Dolorum, iusto.
-        </p>
-        <button class="button">Отправить</button>
+        <button type="button" class="modal-close" data-modal-close></button>
+        <h1 class="form-title">Оставьте свои данные, мы вам перезвоним</h1>
+        <form class="form js-form">
+          <div class="group-form-fields" role="group">
+            <div class="form-field">
+              <label class="form-label" for="customer-name">Имя</label>
+              <input
+                class="form-input"
+                type="text"
+                name="customer-name"
+                id="customer-name"
+              />
+            </div>
+            <br />
+            <div class="form-field">
+              <label class="form-label" for="customer-phone">Телефон</label>
+              <input
+                class="form-input"
+                type="tel"
+                name="customer-phone"
+                id="customer-phone"
+              />
+            </div>
+            <br />
+            <div class="form-field">
+              <label class="form-label" for="customer-mail">Почта</label>
+              <input
+                class="form-input"
+                type="email"
+                name="customer-mail"
+                id="customer-mail"
+              />
+            </div>
+            <br />
+            <div class="form-field">
+              <label class="form-label" for="comment ">Комментарий</label>
+              <!-- <textarea width="448px" height="120px"></textarea> -->
+              <textarea
+                class="comment form-input"
+                name="comment"
+                id="comment"
+                rows="6"
+                placeholder=" "
+              ></textarea>
+            </div>
+          </div>
+          <div class="policy-field">
+            <input
+              type="checkbox"
+              required
+              value="customer-agreement"
+              name="customer-agreement"
+              id="customer-agreement"
+            />
+            <label for="customer-agreement"
+              ><span>Соглашаюсь с рассылкой и принимаю</span>
+              <a href="" class="agreement-terms">Условия договора</a>
+            </label>
+          </div>
+
+          <button class="button" type="submit">Отправить</button>
+        </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal.js">
+
+      // (() => {
+      //     document.querySelector('.js-form').addEventListener('submit', e => {
+      //       e.preventDefault();
+
+      //       console.log('');
+      //       console.count('Submit #');
+
+      //       new FormData(e.currentTarget).forEach((value, name) =>
+      //         console.log(name, ':', value),
+      //       );
+      //     });
+      //   })();
+    </script>
   </body>
 </html>
 
