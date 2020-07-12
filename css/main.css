@@ -1279,7 +1279,7 @@ footer {
 .subscribe-field {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 .email-subscribe {
@@ -1292,7 +1292,7 @@ footer {
   align-items: center;
   letter-spacing: 0.03em;
   padding-left: 10px;
-  /* min-width: 358px; */
+  min-width: 258px;
 
   color: rgba(255, 255, 255, 0.6);
   background-color: var(--primary-footer-color);
