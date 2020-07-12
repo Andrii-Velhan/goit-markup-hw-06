@@ -468,11 +468,10 @@
             </li>
           </ul>
         </div>
-
-        <div class="subscribe">
-          <b>Подпишитесь на рассылку</b>
-          <button class="subscribe-button">Подписаться</button>
-        </div>
+        <form class="subscribe">
+          <label><b>Подпишитесь на рассылку</b><input type="email" /></label>
+          <button type="button" class="subscribe-button">Подписаться</button>
+        </form>
       </div>
 
       <!-- <div class="footer-bottom-box container">
@@ -547,19 +546,20 @@
             </div>
           </div>
           <div class="policy-field">
-            <input
-              type="checkbox"
-              required
-              value="customer-agreement"
-              name="customer-agreement"
-              id="customer-agreement"
-            />
-            <label for="customer-agreement"
-              ><span>Соглашаюсь с рассылкой и принимаю</span>
-              <a href="" class="agreement-terms">Условия договора</a>
+            <label class="checkbox-field">
+              <input
+                type="checkbox"
+                class="checkbox hidden"
+                required
+                value="policy"
+                name="policy"
+              />
+              <span class="checkbox-label"
+                >Соглашаюсь с рассылкой и принимаю
+                <a href="" class="agreement-terms">Условия договора</a>
+              </span>
             </label>
           </div>
-
           <button class="button" type="submit">Отправить</button>
         </form>
       </div>
