@@ -91,6 +91,7 @@
 }
 
 .form-title {
+  display: inline-block;
   margin: 0 0 30px 0;
   font-family: Roboto;
   font-style: normal;
@@ -1283,13 +1284,14 @@ footer {
 }
 
 .email-subscribe {
+  display: flex;
+  align-items: center;
+
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.25px;
 
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   padding-left: 10px;
   min-width: 258px;
